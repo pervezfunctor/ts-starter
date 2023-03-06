@@ -3,17 +3,21 @@
 If you are on Windows 11, you must install WSL 2 which is nothing but Ubuntu on Windows.
 
 
-## Install WSL 2 on Windows 11
+## Setup System
 
-```powershell
-  wsl --install -d Ubuntu
-```
-
-For more details refer to [wsl install](https://learn.microsoft.com/en-us/windows/wsl/install)
+### Install `pnpm`
 
 Install pnpm by following the instructions on [pnpm install](https://pnpm.io/installation)
 
-Install `node` using `pnpm`:
+If you already have `node` installed, but don't have `pnpm` installed, you can run:
+
+```bash
+npm install -g pnpm npm
+```
+
+### Install `node`
+
+If you don't have node, Install `node` using `pnpm`:
 
 ```bash
 pnpm env use --global latest
@@ -25,11 +29,6 @@ You need to install some npm packages globally:
 pnpm install -g degit ndb @antfu/ni tsx turbo
 ```
 
-If you already have `node` installed, but don't have `pnpm` installed, you can run:
-
-```bash
-npm install -g pnpm npm
-```
 
 Install `visual studio code` with the following `winget` command:
 
@@ -37,7 +36,15 @@ Install `visual studio code` with the following `winget` command:
 winget install --id Microsoft.VisualStudioCode
 ```
 
-Once you have node, visual studio code and pnpm installed, you can run the following commands to setup your system:
+### Install WSL 2 on Windows 11
+
+```powershell
+  wsl --install -d Ubuntu
+```
+
+For more details refer to [wsl install](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+### Install everything on Ubuntu/WSL
 
 You could setup all of the above in WSL 2 or Ubuntu by following the instructions at [dotfiles](https://github.com/pervezfunctor/mini-dotfiles.git)
 
