@@ -9,6 +9,7 @@ specifiers:
   eslint-config-prettier: 8.6.0
   eslint-config-turbo: latest
   eslint-plugin-prettier: 4.2.1
+  husky: ^8.0.0
   immer: 9.0.19
   npm-check-updates: 16.7.10
   prettier: 2.8.4
@@ -36,6 +37,7 @@ devDependencies:
   eslint-config-prettier: 8.6.0_eslint@8.35.0
   eslint-config-turbo: 0.0.9_eslint@8.35.0
   eslint-plugin-prettier: 4.2.1_u2zha4kiojzs42thzpgwygphmy
+  husky: 8.0.3
   npm-check-updates: 16.7.10
   prettier: 2.8.4
   rimraf: 4.1.2
@@ -1615,6 +1617,12 @@ packages:
     resolution: {integrity: sha512-Fl70vYtsAFb/C06PTS9dZBo7ihau+Tu/DNCk/OyHhea07S+aeMWpFFkUaXRa8fI+ScZbEI8dfSxwY7gxZ9SAVQ==}
     dependencies:
       ms: 2.1.3
+    dev: true
+
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /iconv-lite/0.6.3:
