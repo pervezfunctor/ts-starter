@@ -11,21 +11,11 @@ If you are on Windows 11, you must install WSL 2 which is nothing but Ubuntu on 
 
 For more details refer to [wsl install](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-Please Note: Following instructions will work on WSL 2 on Windows, Ubuntu or
-macos. These won't work on Windows 11 terminal
+Install pnpm by following the instructions on [pnpm install](https://pnpm.io/installation)
 
-## Setup repository
-
-Clone the repository:
+Install `node` using `pnpm`:
 
 ```bash
-git clone https://github.com/pervezfunctor/ts-starter.git
-```
-
-If you don't have `node` installed, please run:
-
-```bash
-curl -fsSL https://get.pnpm.io/install.sh | sh -
 pnpm env use --global latest
 ```
 
@@ -35,10 +25,28 @@ You need to install some npm packages globally:
 pnpm install -g degit ndb @antfu/ni tsx turbo
 ```
 
-If you do have `node` installed, but don't have `pnpm` installed, you must run:
+If you already have `node` installed, but don't have `pnpm` installed, you can run:
 
 ```bash
 npm install -g pnpm npm
+```
+
+Install `visual studio code` with the following `winget` command:
+
+```powershell
+winget install --id Microsoft.VisualStudioCode
+```
+
+Once you have node, visual studio code and pnpm installed, you can run the following commands to setup your system:
+
+You could setup all of the above in WSL 2 or Ubuntu by following the instructions at [dotfiles](https://github.com/pervezfunctor/mini-dotfiles.git)
+
+## Setup repository
+
+Clone the repository:
+
+```bash
+git clone https://github.com/pervezfunctor/ts-starter.git
 ```
 
 Install all the packages every time you run `git pull` including first time you clone this repository:
@@ -70,25 +78,3 @@ pnpm types:dev
 
 **Open [http://localhost:5173](http://localhost:5173) with your browser to see
 the result.**
-
-## Contributing
-
-Create a branch, like:
-
-```bash
-git checkout -b <your-branch>
-```
-
-Implement your feature or fix an issue. Commit your changes.
-
-To send a pull request, rebase changes from the `main` branch. Then run the
-following before doing `git push` to your branch and sending a pull request:
-
-```bash
-git checkout main
-git pull
-git checkout <your-branch>
-git rebase main
-pnpm install
-pnpm ci
-```
