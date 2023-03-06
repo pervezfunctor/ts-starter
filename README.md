@@ -1,5 +1,16 @@
 # Getting Started
 
+If you are on Windows 11, you must install WSL 2 which is nothing but Ubuntu on Windows.
+
+
+## Install WSL 2 on Windows 11
+
+```powershell
+  wsl --install -d Ubuntu
+```
+
+For more details refer to [wsl install](https://learn.microsoft.com/en-us/windows/wsl/install)
+
 Please Note: Following instructions will work on WSL 2 on Windows, Ubuntu or
 macos. These won't work on Windows 11 terminal
 
@@ -15,16 +26,22 @@ If you don't have `node` installed, please run:
 
 ```bash
 curl -fsSL https://get.pnpm.io/install.sh | sh -
-pnpm env use --global 16
+pnpm env use --global latest
 ```
 
-If you do have `node` installed, but don't have `pnpm` installed, please run:
+You need to install some npm packages globally:
+
+```bash
+pnpm install -g degit ndb @antfu/ni tsx turbo
+```
+
+If you do have `node` installed, but don't have `pnpm` installed, you must run:
 
 ```bash
 npm install -g pnpm npm
 ```
 
-Install all the packages every time you run `git pull`:
+Install all the packages every time you run `git pull` including first time you clone this repository:
 
 ```bash
 pnpm install
