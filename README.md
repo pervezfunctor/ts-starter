@@ -36,6 +36,9 @@ Install `visual studio code` with the following `winget` command:
 winget install --id Microsoft.VisualStudioCode
 ```
 
+Alternatively, even preferrably use the following guide to setup your system.
+
+
 ### Install WSL 2 on Windows 11
 
 ```powershell
@@ -46,7 +49,7 @@ For more details refer to [wsl install](https://learn.microsoft.com/en-us/window
 
 ### Install everything on Ubuntu/WSL
 
-You could setup all of the above in WSL 2 or Ubuntu by following the instructions at [dotfiles](https://github.com/pervezfunctor/mini-dotfiles.git)
+Follow instructions at [dotfiles](https://github.com/pervezfunctor/mini-dotfiles.git)
 
 ## Setup repository
 
