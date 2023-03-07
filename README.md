@@ -65,7 +65,7 @@ For more details refer to
 Clone the repository:
 
 ```bash
-degit pervezfunctor/ts-starter
+degit pervezfunctor/ts-starter ts-starter
 cd ts-starter
 ```
 
