@@ -1,3 +1,3 @@
-import { factorial } from './example'
+import assert from 'tiny-invariant'
 
-console.log(`factorial(5) = ${factorial(5)}`)
+assert(true)
