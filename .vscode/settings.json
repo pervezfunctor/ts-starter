@@ -23,6 +23,11 @@
     "javascript": "html"
   },
 
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+
   "search.exclude": {
     "**/.build": true,
     "**/.cache": true,
@@ -49,6 +54,9 @@
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+
+  "coverage-gutters.coverageReportFileName": "coverage/**/lcov.info",
+  "testing.automaticallyOpenPeekView": "never",
 
   "js/ts.implicitProjectConfig.checkJs": false
 }

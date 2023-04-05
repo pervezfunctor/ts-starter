@@ -5,21 +5,21 @@
     "esbenp.prettier-vscode",
     "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",
-    "github.github-vscode-theme",
     "github.vscode-pull-request-github",
     "humao.rest-client",
     "mhutchie.git-graph",
     "ms-edgedevtools.vscode-edge-devtools",
     "ms-vscode-remote.remote-containers",
-    "mtxr.sqltools-driver-pg",
-    "mtxr.sqltools",
+    "ms-vsliveshare.vsliveshare",
+    "Orta.vscode-twoslash-queries",
     "prisma.prisma",
     "rangav.vscode-thunder-client",
+    "ryanluker.vscode-coverage-gutters",
     "streetsidesoftware.code-spell-checker",
-    "vincaslt.highlight-matching-tag",
     "wayou.vscode-todo-highlight",
+
     "zenclabs.previewjs",
-    "zixuanchen.vitest-explorer",
-    "mattpocock.ts-error-translator"
+
+    "zixuanchen.vitest-explorer"
   ]
 }
